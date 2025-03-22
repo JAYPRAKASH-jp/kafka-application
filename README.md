@@ -33,9 +33,9 @@ cd kafka-application
 docker-compose up -d
 ```
 
-Zookeeper: Runs on port 2181
-Kafka Broker: Exposed on ports 9092 and 29092
-Kafka UI: Available at http://localhost:8080
+1. Zookeeper: Runs on port 2181
+2. Kafka Broker: Exposed on ports 9092 and 29092
+3. Kafka UI: Available at http://localhost:8080
 
 ![image](https://github.com/user-attachments/assets/1ea32fa5-b061-42ff-8fe1-da2ceee9e433)
 
@@ -66,10 +66,11 @@ docker exec -it kafka kafka-console-consumer --bootstrap-server localhost:9092 -
 ## 🚀 Java Springboot Application 
 **Send Message using API**
 curl --location 'http://localhost:8081/kafka/send/test-message'
+
 ![image](https://github.com/user-attachments/assets/482a8ec3-0b8d-49d4-8da9-c4662c89cbee)
 
 
-## Down Kafka
+## 🛑 Down Kafka
 ```bash
 docker-compose down 
 ```
