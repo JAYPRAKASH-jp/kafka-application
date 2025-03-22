@@ -32,23 +32,15 @@ cd kafka-application
 ```bash
 docker-compose up -d
 
-![image](https://github.com/user-attachments/assets/0e90e0ed-7e35-4407-af60-56788e7377c8)
+Zookeeper: Runs on port 2181
+Kafka Broker: Exposed on ports 9092 and 29092
+Kafka UI: Available at http://localhost:8080
 
-![image](https://github.com/user-attachments/assets/0267bc1d-07a1-4756-8a34-0f0a88206c9e)
-
-
-![image](https://github.com/user-attachments/assets/9498e959-d068-4693-bf39-8af91b728e36)
-
-Create Topic
-
+**Create a topic**
 docker exec -it kafka kafka-topics --bootstrap-server localhost:9092 --create --topic test-topic --partitions 1 --replication-factor 1
 
-![image](https://github.com/user-attachments/assets/47f6ec6c-0e6a-4fc0-82c7-fa30a9046087)
-
-List Topic
-
+**List Kafka topics**
 docker exec -it kafka kafka-topics --bootstrap-server localhost:9092 --list
-![image](https://github.com/user-attachments/assets/83993943-2c59-4105-b1a7-967cb7a95396)
 
 Send Message using API - 
 curl --location 'http://localhost:8081/kafka/send/test-message'
