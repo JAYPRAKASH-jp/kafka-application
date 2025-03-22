@@ -54,4 +54,8 @@ Kafka UI View
 ![image](https://github.com/user-attachments/assets/0de87843-f6b8-4b52-836e-ccf1d3050a95)
 
 
+Down Kafka
+
+docker-compose down 
+
 
