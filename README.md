@@ -1,10 +1,37 @@
 # kafka-application
 A sample Kafka application demonstrating how to produce and consume data streams seamlessly.
 
+## 📑 Table of Contents
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Setup and Installation](#setup-and-installation)
+- [Kafka UI](#kafka-ui)
 
-How to Setup Kafka 
+## 🔍 Introduction
+This Kafka Application demonstrates message streaming with Apache Kafka using Docker. 
+It includes:
+- **Zookeeper** for broker coordination
+- **Kafka Broker** for message handling
+- **Kafka UI** for monitoring topics and messages
+- **Java Springboot Application** for Integration
 
+## 🛠 Prerequisites
+Make sure you have the following installed:
+- [Docker](https://www.docker.com/products/docker-desktop)
+- [Docker Compose](https://docs.docker.com/compose/)
+- Java Development Kit (JDK) if running a Java-based consumer/producer
+
+## ⚙️ Setup and Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/JAYPRAKASH-jp/kafka-application.git
+cd kafka-application
+
+### 1. Start Docker Containers
+```bash
 docker-compose up -d
+
 ![image](https://github.com/user-attachments/assets/0e90e0ed-7e35-4407-af60-56788e7377c8)
 
 ![image](https://github.com/user-attachments/assets/0267bc1d-07a1-4756-8a34-0f0a88206c9e)
