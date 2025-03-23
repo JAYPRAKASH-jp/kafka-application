@@ -76,4 +76,18 @@ docker-compose down
 ```
 
 
+**Note**: When you add a persistent volume you will get error **Cluster ID Mismatch**,As Kafka retains metadata about the previous cluster, and when the cluster restarts, it generates a new cluster ID, causing a conflict.
+
+When Kafka restarts with a different cluster ID, it fails to start because it expects the old one.
+
+⚙️ Why This Happens:
+The file meta.properties located in /var/lib/kafka/data/ stores the cluster ID.
+![image](https://github.com/user-attachments/assets/96f3d578-3d15-4b97-a8bf-afdbb181519e)
+
+**Fix**:
+When you see this error in kafka logs,replace the old cluster id with new which you will get in logs.
+
+
+
+
 
