@@ -72,6 +72,8 @@ curl --location 'http://localhost:8081/kafka/send/test-message'
 
 ## 🛑 Down Kafka
 ```bash
-docker-compose down -v
+docker-compose down
 ```
+
+
 
